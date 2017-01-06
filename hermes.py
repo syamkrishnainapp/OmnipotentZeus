@@ -110,8 +110,9 @@ if fio == 'y':
 
     fio_blocksize = '-bs=' + blocksize + 'k'
     fio_filesize = '-size=' + filesize + "M"
-    numjobs = cpu_count  # Number of threads should be equal to number of CPUs
-    spider_hatchlings = int(numjobs) + 1
+    numjobs = numjobs4fio
+    # numjobs = cpu_count  # Number of threads should be equal to number of CPUs
+    spider_hatchlings = int(numjobs)
     fio_numjobs = '-numjobs=' + numjobs
     fio_runtime = '-runtime=' + runtime
     fio_json_file = 'fio.json'
