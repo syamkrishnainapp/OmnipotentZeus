@@ -2,12 +2,12 @@
 
 # DATABASE CREDENTIALS
 db_host = "HOST"
-db_user = "USERNAME"
-db_password = "PASSWORD"
-db_name = "DATABASE"
+db_user = "testuser"
+db_password = "TestUser"
+db_name = "omnipotentzeuslinux"
 
 # PROJECT DETAILS
-project_id = 'c-edgehosting-20161107'  # Start date format is YYYYMMDD (e.g., 20170130 for January 30TH, 2017)
+project_id = 'c-top10-20161107'  # Start date format is YYYYMMDD (e.g., 20170130 for January 30TH, 2017)
 operating_system = 'ubuntu'  # Please enter the operating system (ubuntu or centos)
 
 # TESTS TO RUN
@@ -23,6 +23,7 @@ spec = 'n'  # System test
 # DISK TEST INFORMATION
 blocksize = '4'  # Block size in kilobytes
 filesize = '16'  # File size in megabytes
+numjobs4fio = '8'
 runtime = '60'  # How long would you like this test to run for (in seconds)
 direct_io = 'y'  # If direct I/O is required (bypass cache), please mark y
 async_io = 'y'  # Set y to enable asynchronous tests
