@@ -7,13 +7,13 @@ db_password = "TestUser"
 db_name = "omnipotentzeuslinux"
 
 # PROJECT DETAILS
-project_id = 'c-top10-20161107'  # Start date format is YYYYMMDD (e.g., 20170130 for January 30TH, 2017)
+project_id = 'c-top10-20170106'  # Start date format is YYYYMMDD (e.g., 20170130 for January 30TH, 2017)
 operating_system = 'ubuntu'  # Please enter the operating system (ubuntu or centos)
 
 # TESTS TO RUN
 # Please mark with a y (indicating yes) for each test you want to run
 geekbench = 'y'  # System test
-iperf = 'y'  # Internal network test
+iperf = 'n'  # Internal network test
 fio = 'y'  # Disk test
 iozone = 'n'  # Disk test
 sysbench = 'n'  # Disk test
@@ -22,8 +22,8 @@ spec = 'n'  # System test
 
 # DISK TEST INFORMATION
 blocksize = '4'  # Block size in kilobytes
-filesize = '16'  # File size in megabytes
-numjobs4fio = '8'
+filesize = '5120'  # File size in megabytes
+numjobs4fio = '1'
 runtime = '60'  # How long would you like this test to run for (in seconds)
 direct_io = 'y'  # If direct I/O is required (bypass cache), please mark y
 async_io = 'y'  # Set y to enable asynchronous tests
@@ -43,7 +43,7 @@ ab_path = "/admin"  # Path
 # Either duration or number of iterations must complete in order for the testing to stop.
 sleeptime = 0  # Adjust the time in between iterations, input a sleeptime (in seconds).
 iterations = 10000  # Specify the number of iterations this testing should complete,
-duration = 24  # Duration and duration value will limit the time the suite will be running for.
+duration = 12  # Duration and duration value will limit the time the suite will be running for.
 duration_value = "hours"  # Please enter seconds, minutes, hours, or days
 
 if duration_value.lower() == "seconds":
